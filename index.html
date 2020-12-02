@@ -10,11 +10,12 @@
    <!-- GOOGLE FONTS -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9220ee82e.js" crossorigin="anonymous"></script>
    <!-- Tab Title -->
     <title>Lauren Alayza's Portfolio</title>
   </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar fixed-top navbar-expand-lg navbar-light bg-light" data-offset="50">
   <!--NAVBAR-->
 <!-- Will want to include scrollspy -->
 
@@ -26,9 +27,10 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="#">Professional Activities</a>
-      <a class="nav-link" href="#">Portfolio</a>
-      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="#BG">Background</a>
+      <a class="nav-link" href="#P">Portfolio</a>
+      <a class="nav-link" href="#R">Resume</a>
+      <a class="nav-link" href="#C">Contact</a>
     </div>
   </div>
 </nav>
@@ -40,28 +42,37 @@
   <div class="heading-sm">
     Web & Software Developer
   </div>
-  <p class="heading-sub">HTML, CSS, Javascript, Bootstrap, React, TypeScript, APIs, Node.js, Express, Sequelize, PostgreSQL, Full Stack apps, & Git
+  <p class="heading-sub" id="languages">HTML, CSS, Javascript, Bootstrap, React, TypeScript, APIs, Node.js, Express, Sequelize, PostgreSQL, Full Stack apps, & Git
   </p>
 </div>
 
-<section>
+<section id="BG">
   <h1>Background</h1>
+</br>
+<!-- Photo -->
+<div id="headshot">
+<img src="assets/LAphotoSmall.jpg">
+</div>
+<!-- BIO -->
   <h3>Lifelong learner, coder, & civic advocate.</h3>
+</br>
   <div class="two-col">
-    <p>Hi! Thanks for checking out my portfolio. My name is Lauren Alayza and I am a web and software developer. I first began my coding journey in May 2020. Before I learned to code, I dabbled in other industries which have helped me become well-rounded in hard and soft skills. I am a classically trained cellist and performer; music has and always will be an important aspect of my life. In addition, I serve as Secretary of the Indiana Latino Democratic Caucus. I first began volunteering with the Democrats in 2008 when Obama was running for office, before I could even vote.  </p>
+    <p>Hi! My name is Lauren Alayza and I am a web and software developer. I first began my programming journey in May 2020. Before I learned to code at Eleven Fifty Academy, I developed skills in other industries which have helped me become well-rounded in hard and soft skills.  </p>
+      
+      
   </div>
   <div class="two-col">
-    <p>I studied Political Science at Indiana University, and in my senior year of my undergraduate degree I discovered an interest in technology and its effects on society. I became curious about how technology could be used for good, and how to sustainably produce and power it as well. I studied emerging green technologies, and about the intersection of technology and government. There's an adage that goes like, "Be the change you wish to see in the world"</p>
+    <p>I am currently focused on developing both my programming and communication skills. During the day, I serve in a software sales role where I get the opportunity to work with local government officials seeking GIS solutions to better serve the public. In the evenings, I am often found collaborating with others online in the web development community while working on personal projects.</p>
   </div>
 </section>
 
-<div class="parallax2">
+<div class="parallax2" id="P" >
   <div class="heading-sm">
-    Fire Works
+    <!-- Fire Works -->
   </div>
 
   <!-- PORTFOLIO CAROUSEL -->
-<div id="carousel">
+<!-- <div id="carousel">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -99,34 +110,77 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+</div> -->
   
-</div>
+
+<!-- BOOTSTRAP CARDS -->
+<div class="card-group">
+  <div class="card">
+    <img src="./assets/apod.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">NASA API</h5>
+      <p class="card-text">I connected to one of NASA's APIs - the Astronomy Picture of the Day.</p>
+      <h6>View Project <i class="fas fa-external-link-alt"></i></h6>
+      <h6>See Code <i class="fab fa-github-square"></i></h6>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./assets/polis-post.PNG" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Polis Post App</h5>
+      <p class="card-text">This was my first app and inspiration came from the heart. Please check it out!</p>
+      <h6>View Project <i class="fas fa-external-link-alt"></i></h6>
+      <h6>See Code <i class="fab fa-github-square"></i></h6>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./assets/bookwyrm.PNG" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Book Wyrm App</h5>
+      <p class="card-text">Six week group project. Check it out and let me know what you think!</p>
+      <h6>View Project <i class="fas fa-external-link-alt"></i></h6>
+      <h6>See Code <i class="fab fa-github-square"></i></h6>
+    </div>
+  </div>
 </div>
 
-<section class="dark">
-  <h2>Portfolio</h2>
-  <p>Feel free to check out my portfolio.</p>
+
+
+
+
+
+
+
+</div>
+<!-- Parallax div (below) -->
+</div> 
+
+<section class="dark"  id="R">
+  <h2>Resume</h2>
+  <p>Feel free to download my resume here.</br> If you'd like more information, please fill out the form below to get in touch.</p>
 </section>
 
-<div class="parallax3">
+<div class="parallax3"  id="C">
   <div class='heading-sm'>
-    <form
-  action="https://formspree.io/f/mbjzyppg"
-  method="POST"
+    <!-- modify this form HTML and place wherever you want your form -->
+
+<form
+action="https://formspree.io/f/mbjzyppg"
+method="POST"
 >
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-  <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
+<label>
+  Your name:</br>
+  <input type="text"></label></br>
+</label>
+<label>
+  Your email:</br>
+  <input type="text" name="_replyto"></br>
+</label></br>
+<label>
+  Your message:</br>
+  <textarea name="message"></textarea>
+</label></br>
+<button type="submit">Send</button>
 </form>
 
 
@@ -134,17 +188,15 @@
 </div>
 
 <div class="dark">
-  <h3>Contact me:</h3>
-  <div class="two-col">
-    <p>professional Activities.</p>
-  </div>
-  <div class="two-col">
-    <p>yadda yadda.</p>
-  </div>
+  <i class="fab fa-linkedin"></i>
+  <i class="fab fa-github-square"></i>
+  <i class="fab fa-twitter-square"></i>
+  <h6>© 2020 Lauren Alayza</h6>
 </div>
 
 <div class="parallax4">
 </div>
+
 
      
     <!--MY SCRIPTS-->

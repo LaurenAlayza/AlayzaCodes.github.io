@@ -9,8 +9,8 @@ body, html {
   text-align: center;
 }
 .parallax1 {
-  background: url(./assets/blacksand.jfif);
-  min-height: 100%;
+  background: url(./assets/pallette.jfif);
+  min-height: 95%;
   /* opacity: 0.5; */
 }
 #carousel {
@@ -21,16 +21,22 @@ body, html {
     padding-right: 20%;
 }
 .parallax2 {
-  background: url(./assets/darktrees.jfif);
+  /* background: url(./assets/darktrees.jfif); */
+  background: linear-gradient(#765E90, #9E78A7);
   min-height: 60%;
 }
+/* Clouds & forms area */
 .parallax3 {
-  background: url(./assets/clouds.jfif);
-  min-height: 40%;
+  background: url(./assets/landscape.jfif);
+  min-height: 75%;
+}
+.form{
+  text-align: center;
 }
 .parallax4 {
-  background: url(./assets/bluestars.jfif);
-  min-height: 100%;
+  /* background: url(./assets/bluestars.jfif); */
+  background: linear-gradient(#E5B0CB, #FFE3EE);
+  min-height: 20%;
 }
 .parallax1, .parallax2, .parallax3, .parallax4 {
   position: relative;
@@ -49,7 +55,7 @@ body, html {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 8px;
-  text-shadow: 0 0 10px #000;
+  text-shadow: 0 0 10px #10002b;
 }
 .heading-sm {
   position: absolute;
@@ -60,6 +66,11 @@ body, html {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-shadow: 0 0 10px #000;
+}
+/* languages */
+#languages {
+    padding-left: 25%;
+    padding-right: 25%;
 }
 .heading-sub {
     position: absolute;
@@ -73,9 +84,9 @@ body, html {
   } 
 .two-col {
   float: left;
-  width: 42%;
+  width: 50%;
   padding: 0 4%;
-  text-align: left;
+  text-align: justify;
 }
 section {
   overflow: auto;
@@ -84,8 +95,17 @@ section {
 .dark {
   overflow: auto;
   padding: 50px 80px;
-  background-color: #2E3338;
+  /* background-color: #2E3338; */
+  background-color: #10002b;
   color: #f2f2f2;
+}
+#headshot {
+  width: auto;
+  height: 100%;
+}
+
+.card-img-top {
+  /* max-height: 50%; */
 }
 
 @media (max-width: 768px) {
