@@ -49,23 +49,36 @@
 <section id="BG">
   <div class="bio-bg">
     <div class="bio-card">
-  <h1>Background</h1>
+  <!-- <h1>Background</h1> -->
 <!-- Photo -->
 <div >
 <img id="headshot" src="assets/LAphotoSmallest.jpg">
 </div>
 <!-- BIO -->
-  <h4>Lifelong learner, coder, & civic advocate.</h4>
 </br>
   <div class="biography">
-    <p>Hi! I'm Lauren Alayza and I am a web and software developer. I first began my programming journey in May 2020. I hold a Bachelor of Arts in Political Science from Indiana University. I am drawn to the intersection of technology and government.</p>
+    <p>Hi! I'm Lauren Alayza and I am a lifelong Hoosier, advocate, entrepreneurial Peruvian that loves to create value in any way possible. <b>And food</b> I love food-- from gardening to cooking and eating, of course! I'll share some of my favorite recipes & local eats with you and we can order some when we meet... </p>
+    <p>I've had the opportunity to work in such industries as: <i>Music performance, Local government, Advocacy in issue and political campaigns,</i> and more recently, <i>software sales.</i> </p>
+
+    <p>
+      I'm also Secretary of the 
+      <a href="https://www.inlatinodems.com/" target="_blank">Indiana Latino Democratic Caucus</a>, where I help encourage and facilitate the active participation of Latinos in democratic processes - and I love it!
+    </p>
+    <p>Most entry-level web developers, UX/UI specialists and designers consider themselves advocates, having focused studies on web accessibility and ADA compliance, while leaving the business goals on the backburner for someone else to worry about. <b>But businesses need money to survive.</b>There's no point in having a sleek website with joyful users if they are not converting into sales. A good designer and developer must make sure that the business goals and the user goals live in harmony and cooperation.</p>
+
+    <p> <strong>
+      “Courage is all about taking action. Courage requires discipline, vitality, and guts to face those tasks in your profession that make you feel uncomfortable.”<br>
+      ― David Sandler
+    </strong>
+    </p>
   </div>
 </div>
 </div>
 </section>
 <!-- PARALLAX 2 PORTFOLIO -->
 <div class="parallax2" id="P" > </br>
-  <h1 id="portfolio">Portfolio</h1>
+  <div id="portfolio">Portfolio</div><br>
+  <div id="portf-sub">I've had the privilege of working on solo projects and alongside talented people.</div>
 <div class="row">
   <div class="col-sm-6">
      <!-- CSS Creature -->
@@ -75,7 +88,7 @@
       <h5 class="card-title">CSS Creature</h5>
       <p class="card-text">CSS cartoon creature using HTML and CSS in codepen. </p>
       <a href="https://codepen.io/laurenalayza/pen/NWGeVXB" target="_blank">
-        <h6>View Project<i class="fas fa-external-link-alt"></i></h6>
+        <h6>View Project</h6>
       </a>
       <!-- <h6>See Code <i class="fab fa-github-square"></i></h6> -->
     </div>
@@ -87,9 +100,9 @@
   <img src="./assets/apod.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">NASA API</h5>
-    <p class="card-text">I connected to a NASA API; Astronomy Picture of the Day.</p>
+    <p class="card-text">Connection to NASA API; Astronomy Picture of the Day.</p>
     <a href="https://la-nasa-api-efa.web.app/" target="_blank">
-      <h6>View Project <i class="fas fa-external-link-alt"></i></h6>
+      <h6>View Project </h6>
     </a>
     <!-- <h6>See Code <i class="fab fa-github-square"></i></h6> -->
   </div>
@@ -103,9 +116,9 @@
     <h5 class="card-title">Polis Post App</h5>
     <p class="card-text">App for political organizers running campaigns.</p>
     <a href="https://polis-post-client.herokuapp.com/" target="_blank">
-      <h6>View Project <i class="fas fa-external-link-alt"></i></h6>
+      <h6>View Project </h6>
     </a>
-    <h6>See Code <i class="fab fa-github-square"></i></h6>
+    <!-- <h6>See Code <i class="fab fa-github-square"></i></h6> -->
   </div>
 </div>
 </div>
@@ -115,11 +128,11 @@
   <img src="./assets/bookwyrm.PNG" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Book Wyrm App</h5>
-    <p class="card-text">Six week group project. Final project at Eleven Fifty Academy. </p>
+    <p class="card-text">6-week group project at Eleven Fifty Academy. </p>
     <a href="https://book-wyrm-book-club.herokuapp.com/banner" target="_blank">
-      <h6>View Project <i class="fas fa-external-link-alt"></i></h6>
+      <h6>View Project </h6>
     </a>
-    <h6>See Code <i class="fab fa-github-square"></i></h6>
+    <!-- <h6>See Code <i class="fab fa-github-square"></i></h6> -->
   </div>
 </div>
 </div>
@@ -129,20 +142,20 @@
 </div>
 <!-- Parallax div (below) -->
 </div> 
-
+<!-- RESUME DOWNLOAD SECTION  -->
 <section class="dark"  id="R">
-  <h2>Resume</h2>
-  <p>Feel free to download my resume here.</br> If you'd like more information, please fill out the form below to get in touch.</p>
+  <h2 id="resume">Resume</h2>
+  <p id="resume-sub">Feel free to download my resume <a href="./assets/Resume.pdf" target="_blank">HERE</a>.</br> 
+    If you'd like more information, please fill out the form below to get in touch.</p>
 </section>
 
+<!-- CONTACT FORM SECTION -->
 <div class="parallax3"  id="C">
-  <div class='heading-sm'>
-    <!-- modify this form HTML and place wherever you want your form -->
-
+  <h2 id="contact">Contact Me</h2>
 <form
 action="https://formspree.io/f/mbjzyppg"
 method="POST"
->
+id="formspree">
 <label>
   Your name:</br>
   <input type="text"></label></br>
@@ -157,26 +170,19 @@ method="POST"
 </label></br>
 <button type="submit">Send</button>
 </form>
-
-
-
-
-
-  </div>
 </div>
-
+<!-- FOOTER AREA -->
 <div class="dark">
-  <i class="fab fa-linkedin"></i>
-  <i class="fab fa-github-square"></i>
-  <i class="fab fa-twitter-square"></i>
+  <a href="https://www.linkedin.com/in/laurenalayza/" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/LaurenAlayza" target="_blank">
+    <i class="fab fa-github-square"></i>
+  </a>
+  <a href="https://twitter.com/AlayzaCodes" target="_blank"><i class="fab fa-twitter-square"></i></a>
+  
   <h6>© 2020 Lauren Alayza</h6>
 </div>
-
-<!-- <div class="parallax4">
-</div> -->
-
-
-     
     <!--MY SCRIPTS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
