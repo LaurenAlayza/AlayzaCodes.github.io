@@ -97,7 +97,7 @@ section {
   font-size: 2vh;
 }
 #headshot {
-  border-radius: 5%;
+  border-radius: 50%;
   max-width: 100%;
   height: auto;
 }
@@ -197,6 +197,15 @@ form{
   padding-left: 25%;
   padding-right: 25%;
   padding-top: 3%;
+}
+#contact-sub{
+  color: white;
+  font-family: 'Merriweather', serif;
+  text-shadow: 0 0 10px #10002b;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 2vh;
+  margin-top: 1%;
 }
 /* The Form itself */
 #formspree{
